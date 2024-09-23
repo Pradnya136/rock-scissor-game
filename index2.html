@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game/playing game</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="icon/png" href="assests/logo2.png">
+</head>
+<body>
+    <div id="main">
+        <div id="score-box">
+            <div class="title-box">
+                <ul class="upper-title">
+                    <li>Rock</li>
+                    <li>Paper</li>
+                    <li>Scissors</li>
+                </ul>
+            </div>
+ 
+            <div class="scores">
+                <div class="pc-score">
+                    <p>Computer score</p>
+                    <h1 id="pc-count">0</h1>
+                </div>
+                <div class="human-score">
+                    <p>Your score</p>
+                    <h1 id="user-count">0</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="game">
+            <div class="game-wrapper-box">
+                <div class="rock-wrap">
+                    <h2 class="picked">YOU PICKED</h2>
+                    <div class="winner-effect-wrap">
+                        <div class="rock-div" id="user-choice" class="result-box">
+                            <img id="user-choice-image" src="assests/rock.png" alt="your's choice image">
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="game-middle-content">
+                    <div class="middle-info">
+                        <h2 id="result-text">YOU WIN</h2>
+                        <h4>AGAINST PC</h4>
+                        <a href="index.html"><button class="play-again-btn"> PLAY AGAIN </button></a>
+                   
+                </div>
+   
+                </div>
+                <div class="scissor-wrap">
+                    <h2 class="picked">PC PICKED</h2>
+                    <div class="winner-effect-wrap">
+                        <div class="scissor" id="pc-choice" class="result-box" >
+                            <img id="computer-choice-image" src="assests/scissor.png" alt="computers's choice image">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+              
+ 
+                <a href="index3.html"> <button class="next-btn">next</button> </a>
+                <button class="rules-btn">rules</button>
+              
+            </div>
+       
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

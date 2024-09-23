@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon/png" href="assests/logo2.png">
+</head>
+<body>
+    <div id="main">
+        <div id="score-box">
+            <div class="title-box">
+                <ul class="upper-title">
+                    <li>Rock</li>
+                    <li>Paper</li>
+                    <li>Scissors</li>
+                </ul>
+            </div>
+ 
+            <div class="scores">
+                <div class="pc-score">
+                    <p>Computer score</p>
+                    <h1 id="pc-count">0</h1>
+                </div>
+                <div class="human-score">
+                    <p>Your score</p>
+                    <h1 id="user-count">0</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="game">
+            <div class="game-wrapper-box">
+                <div class="rock-div item" data-value="rock-div">
+                    <a href="#" >
+                        <img src="assests/rock.png" alt="hand-rock image" >
+                    </a> 
+                   
+                </div>
+                <div class="scissor-div item" data-value="scissor-div">
+                    <a  href="#"  >
+                        <img src="assests/scissor.png" alt="hand-scissor image" >
+                    </a>
+                   
+                </div>
+                <div class="paper-div item" data-value="paper-div">
+                    <a href="#"  >
+                        <img src="assests/paper.png" alt="hand-paper image" >
+                    </a>
+               
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+              
+                <div class="rules-content " id="content">
+                    <span class="close-btn-of-rules">X</span>
+                    <h2>Game Rules</h2>
+                    <ul class="rules-ul">
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+                    </ul>
+                </div>
+                <button id="show" class="rules-btn">rules</button>
+            </div>
+       
+        </div>
+    </div>
+    <script src="index_.js">
+
+let contents = document.getElementById("content");
+let showbtn = document.getElementById("show");
+
+showbtn.addEventListener("click", function(){
+    contents.style.visibility = 'visible'; 
+})
+    </script>
+</body>
+</html>
